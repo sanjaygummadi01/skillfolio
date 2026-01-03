@@ -1,4 +1,5 @@
 import aboutImage from '@/assets/about-portrait.png';
+import { Download } from 'lucide-react';
 
 const AboutSection = () => {
   return (
@@ -46,30 +47,6 @@ const AboutSection = () => {
                   <div className="text-muted-foreground text-sm">Happy Clients</div>
                 </div>
               </div>
-
-              {/* Download Resume Button */}
-              <div className="pt-6">
-                <a
-                  href="/Sanjay_Gummadi_Resume.pdf"
-                  download="Sanjay_Gummadi_Resume.pdf"
-                  className="neon-button-primary inline-flex items-center gap-3 group"
-                >
-                  <svg 
-                    className="w-5 h-5 transition-transform group-hover:-translate-y-0.5" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={2} 
-                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" 
-                    />
-                  </svg>
-                  Download My Resume
-                </a>
-              </div>
             </div>
 
             {/* Right Side - Portrait */}
@@ -89,6 +66,32 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Download Resume Button - Centered at Bottom */}
+          <div className="mt-12 flex justify-center">
+            <a
+              href="/Sanjay_Gummadi_Resume.pdf"
+              download="Sanjay_Gummadi_Resume.pdf"
+              className="group relative inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105"
+              style={{
+                background: 'linear-gradient(135deg, hsl(180 100% 50% / 0.2), hsl(280 100% 60% / 0.2))',
+                border: '2px solid hsl(180 100% 50% / 0.6)',
+                boxShadow: '0 0 20px hsl(180 100% 50% / 0.3), 0 0 40px hsl(180 100% 50% / 0.1), inset 0 0 20px hsl(180 100% 50% / 0.1)',
+              }}
+            >
+              {/* Animated glow background */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/30 to-primary/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+              
+              <Download className="w-6 h-6 text-primary transition-transform group-hover:animate-bounce" />
+              <span className="relative text-foreground">Download My Resume</span>
+              
+              {/* Corner accents */}
+              <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-primary" />
+              <div className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-primary" />
+              <div className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-primary" />
+              <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-primary" />
+            </a>
           </div>
         </div>
       </div>
