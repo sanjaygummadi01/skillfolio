@@ -10,47 +10,42 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center overflow-hidden"
       style={{ background: '#050B0E' }}
     >
-      {/* Large portrait - right side, close-up zoom, dark dramatic shading */}
+      {/* Half-face portrait - right half of face visible, left half blends to black */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-[-15%] right-[-10%] md:right-[-5%] h-[130%] w-[75%] md:w-[65%]">
-          <img
-            src={heroPortrait}
-            alt="Sanjay Gummadi"
-            className="h-full w-full object-cover"
-            style={{
-              objectPosition: '50% 15%',
-              filter: 'brightness(0.35) contrast(1.1)',
-            }}
-          />
-          {/* Heavy left fade into black */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(to right, #050B0E 0%, #050B0E 5%, transparent 45%)',
-            }}
-          />
-          {/* Top fade */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(to bottom, #050B0E 0%, transparent 30%)',
-            }}
-          />
-          {/* Bottom fade */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(to top, #050B0E 0%, transparent 25%)',
-            }}
-          />
-          {/* Right edge fade */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(to left, #050B0E 0%, transparent 20%)',
-            }}
-          />
-        </div>
+        <img
+          src={heroPortrait}
+          alt="Sanjay Gummadi"
+          className="absolute h-full object-cover"
+          style={{
+            right: '-5%',
+            top: '-10%',
+            height: '120%',
+            width: '70%',
+            objectPosition: '55% 25%',
+            filter: 'brightness(0.28) contrast(1.2) saturate(0.5)',
+          }}
+        />
+        {/* Smooth left fade - blends face into black */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to right, #050B0E 0%, #050B0E 30%, rgba(5,11,14,0.85) 42%, rgba(5,11,14,0.4) 55%, transparent 70%)',
+          }}
+        />
+        {/* Top fade */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to bottom, #050B0E 0%, transparent 25%)',
+          }}
+        />
+        {/* Bottom fade */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(to top, #050B0E 0%, transparent 20%)',
+          }}
+        />
       </div>
 
       {/* Text content - left aligned */}
