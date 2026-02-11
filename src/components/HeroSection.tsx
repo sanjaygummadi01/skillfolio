@@ -31,28 +31,28 @@ const HeroSection = () => {
               objectPosition: '50% 18%',
               transform: 'scale(1.5)',
               transformOrigin: '55% 28%',
-              filter: 'brightness(0.65) contrast(1.3) saturate(0.55)',
+              filter: 'brightness(0.85) contrast(1.6) saturate(0.45)',
             }}
           />
-          {/* Split lighting overlay - darkens left half of face dramatically */}
+          {/* Split lighting - deep shadow cuts through center of face */}
           <div
             className="absolute inset-0"
             style={{
-              background: 'linear-gradient(to right, rgba(5,11,14,0.95) 0%, rgba(5,11,14,0.8) 25%, rgba(5,11,14,0.45) 45%, rgba(5,11,14,0.1) 60%, transparent 75%)',
+              background: 'linear-gradient(95deg, rgba(5,11,14,1) 0%, rgba(5,11,14,1) 35%, rgba(5,11,14,0.85) 48%, rgba(5,11,14,0.35) 56%, rgba(5,11,14,0.05) 63%, transparent 70%)',
             }}
           />
-          {/* Right half shadow - darkens right side of face */}
+          {/* Right edge darkening */}
           <div
             className="absolute inset-0"
             style={{
-              background: 'linear-gradient(to left, rgba(5,11,14,0.85) 0%, rgba(5,11,14,0.6) 25%, rgba(5,11,14,0.3) 45%, transparent 65%)',
+              background: 'linear-gradient(to left, rgba(5,11,14,0.85) 0%, rgba(5,11,14,0.4) 15%, transparent 40%)',
             }}
           />
-          {/* Additional vertical shadow on face center-left */}
+          {/* Bottom darkening for chin/neck */}
           <div
             className="absolute inset-0"
             style={{
-              background: 'radial-gradient(ellipse 80% 120% at 30% 50%, rgba(5,11,14,0.7) 0%, transparent 70%)',
+              background: 'linear-gradient(to top, rgba(5,11,14,0.7) 0%, rgba(5,11,14,0.2) 25%, transparent 45%)',
             }}
           />
         </div>
