@@ -1,5 +1,5 @@
 import aboutImage from '@/assets/about-portrait.png';
-import { Download } from 'lucide-react';
+
 
 const AboutSection = () => {
   return (
@@ -83,7 +83,7 @@ const AboutSection = () => {
               {/* Animated glow background */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/30 to-primary/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
               
-              <Download className="w-6 h-6 text-primary transition-transform group-hover:animate-bounce" />
+              <svg className="w-6 h-6 text-primary transition-transform group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
               <span className="relative text-foreground">Download My Resume</span>
               
               {/* Corner accents */}
