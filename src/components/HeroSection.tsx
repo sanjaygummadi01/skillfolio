@@ -7,52 +7,77 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-glow-hero"
+      className="relative min-h-screen flex items-center overflow-hidden"
+      style={{ background: '#050B0E' }}
     >
-      {/* Faded Background Text */}
-      <div className="text-fade-bg top-1/2 -translate-y-1/2">
-        SANJAY
+      {/* Large portrait - right side, blended into dark background */}
+      <div className="absolute inset-0 flex justify-end pointer-events-none">
+        <div className="relative h-full w-[55%] md:w-[50%]">
+          <img
+            src={heroPortrait}
+            alt="Sanjay Gummadi"
+            className="h-full w-full object-cover object-top"
+            style={{
+              maskImage: 'linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 30%, black 70%, transparent 100%), linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)',
+              maskComposite: 'intersect',
+              WebkitMaskComposite: 'source-in',
+              opacity: 0.7,
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#050B0E] via-transparent to-[#050B0E]/80" />
+        </div>
       </div>
 
-      {/* Subtle Glow Particles */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-neon-cyan/5 rounded-full blur-3xl animate-pulse-glow" />
-        <div className="absolute bottom-40 right-20 w-96 h-96 bg-neon-purple/5 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-neon-teal/5 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '0.5s' }} />
-      </div>
-
-      <div ref={ref} className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center text-center">
-          {/* Portrait Image */}
-          <div className={`mb-8 animate-float scroll-reveal-scale ${isVisible ? 'revealed' : ''}`}>
-            <div className="relative">
-              <img
-                src={heroPortrait}
-                alt="Sanjay - UI/UX Designer & React Developer"
-                className="w-40 h-40 md:w-52 md:h-52 object-cover neon-rim"
-              />
-              <div className="absolute inset-0 rounded-full bg-primary/10 blur-xl scale-125" />
-            </div>
-          </div>
-
-          <h1 className={`font-heading text-4xl md:text-6xl lg:text-7xl font-bold mb-3 tracking-wide neon-text-cyan scroll-reveal ${isVisible ? 'revealed' : ''}`} style={{ transitionDelay: '0.2s' }}>
-            SANJAY GUMMADI
+      {/* Text content - left aligned */}
+      <div ref={ref} className="container mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+        <div className="max-w-2xl">
+          <h1
+            className={`font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-2 tracking-wide text-foreground scroll-reveal ${isVisible ? 'revealed' : ''}`}
+            style={{ transitionDelay: '0.2s' }}
+          >
+            I'm Sanjay Gummadi
           </h1>
 
-          <h2 className={`font-heading text-xl md:text-2xl lg:text-3xl font-semibold mb-6 tracking-wide scroll-reveal ${isVisible ? 'revealed' : ''}`} style={{ transitionDelay: '0.4s' }}>
-            <span className="text-foreground">UI/UX Designer</span>
-            <span className="text-primary mx-3">&</span>
-            <span className="text-foreground">React Front-End Developer</span>
+          <h2
+            className={`font-heading text-3xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide scroll-reveal ${isVisible ? 'revealed' : ''}`}
+            style={{ transitionDelay: '0.4s', color: 'hsl(var(--primary))' }}
+          >
+            UI/UX Designer &<br />React Developer
           </h2>
 
-          <p className={`text-muted-foreground text-lg md:text-xl max-w-2xl mb-10 leading-relaxed scroll-reveal ${isVisible ? 'revealed' : ''}`} style={{ transitionDelay: '0.6s' }}>
-            Crafting pixel-perfect interfaces with intuitive user experiences. 
+          <p
+            className={`text-muted-foreground text-base md:text-lg max-w-xl mb-10 leading-relaxed scroll-reveal ${isVisible ? 'revealed' : ''}`}
+            style={{ transitionDelay: '0.6s' }}
+          >
+            Crafting pixel-perfect interfaces with intuitive user experiences.
             Bringing designs to life through clean, efficient React code.
           </p>
 
-          <div className={`flex flex-col sm:flex-row gap-4 scroll-reveal ${isVisible ? 'revealed' : ''}`} style={{ transitionDelay: '0.8s' }}>
-            <a href="#uiux" className="neon-btn-primary">
-              View My Work
+          <div
+            className={`flex gap-4 scroll-reveal ${isVisible ? 'revealed' : ''}`}
+            style={{ transitionDelay: '0.8s' }}
+          >
+            <a
+              href="/Sanjay_Gummadi_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3 font-heading font-semibold text-sm tracking-wider uppercase border-2 transition-all duration-300"
+              style={{
+                backgroundColor: 'hsl(var(--primary))',
+                borderColor: 'hsl(var(--primary))',
+                color: '#050B0E',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'transparent';
+                e.currentTarget.style.color = 'hsl(var(--primary))';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'hsl(var(--primary))';
+                e.currentTarget.style.color = '#050B0E';
+              }}
+            >
+              Download CV
             </a>
             <a href="#contact" className="neon-btn-outline">
               Contact Me
