@@ -17,41 +17,42 @@ const HeroSection = () => {
           alt="Sanjay Gummadi"
           className="absolute object-cover"
           style={{
-            right: '-2%',
+            right: '-8%',
             top: '50%',
-            transform: 'translateY(-48%)',
-            height: '110%',
-            width: '55%',
-            objectPosition: '60% 20%',
-            filter: 'brightness(0.55) contrast(1.35) saturate(0.7)',
+            transform: 'translateY(-42%) scale(1.6)',
+            transformOrigin: '60% 30%',
+            height: '100%',
+            width: '60%',
+            objectPosition: '50% 15%',
+            filter: 'brightness(0.5) contrast(1.4) saturate(0.6)',
           }}
         />
-        {/* Left edge fade - face shadow side merges into background */}
+        {/* Left fade - creates half-face shadow blending into background */}
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to right, #050B0E 0%, #050B0E 35%, rgba(5,11,14,0.7) 45%, rgba(5,11,14,0.2) 55%, transparent 65%)',
+            background: 'linear-gradient(to right, #050B0E 0%, #050B0E 32%, rgba(5,11,14,0.85) 42%, rgba(5,11,14,0.4) 52%, rgba(5,11,14,0.1) 60%, transparent 68%)',
           }}
         />
-        {/* Top subtle fade */}
+        {/* Top fade */}
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to bottom, #050B0E 0%, transparent 15%)',
+            background: 'linear-gradient(to bottom, #050B0E 0%, #050B0E 5%, transparent 25%)',
           }}
         />
-        {/* Bottom subtle fade */}
+        {/* Bottom fade */}
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to top, #050B0E 0%, transparent 12%)',
+            background: 'linear-gradient(to top, #050B0E 0%, #050B0E 3%, transparent 20%)',
           }}
         />
         {/* Right edge fade */}
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to left, #050B0E 0%, transparent 8%)',
+            background: 'linear-gradient(to left, #050B0E 0%, transparent 10%)',
           }}
         />
       </div>
