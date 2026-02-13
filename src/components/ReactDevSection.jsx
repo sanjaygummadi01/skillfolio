@@ -1,4 +1,4 @@
-import ProjectCard from './ProjectCard.jsx';
+import ProjectCard from './ProjectCard';
 import reactProject1 from '@/assets/react-project-1.png';
 import reactProject2 from '@/assets/react-project-2.png';
 import reactProject3 from '@/assets/react-project-3.png';

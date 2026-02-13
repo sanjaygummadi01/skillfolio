@@ -1,13 +1,13 @@
-import Navbar from '@/components/Navbar.jsx';
-import HeroSection from '@/components/HeroSection.jsx';
-import AboutSection from '@/components/AboutSection.jsx';
-import UIUXSection from '@/components/UIUXSection.jsx';
-import ReactDevSection from '@/components/ReactDevSection.jsx';
-import SkillsSection from '@/components/SkillsSection.jsx';
-import CertificationsSection from '@/components/CertificationsSection.jsx';
-import ContactSection from '@/components/ContactSection.jsx';
-import Footer from '@/components/Footer.jsx';
-import useScrollReveal from '@/hooks/useScrollReveal.js';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
+import UIUXSection from '@/components/UIUXSection';
+import ReactDevSection from '@/components/ReactDevSection';
+import SkillsSection from '@/components/SkillsSection';
+import CertificationsSection from '@/components/CertificationsSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const Index = () => {
   useScrollReveal();

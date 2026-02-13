@@ -1,4 +1,4 @@
-import ProjectCard from './ProjectCard.jsx';
+import ProjectCard from './ProjectCard';
 import project1 from '@/assets/uiux-project-1.png';
 import project2 from '@/assets/uiux-project-2.png';
 import project3 from '@/assets/uiux-project-3.png';

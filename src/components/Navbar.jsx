@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import useActiveSection from '@/hooks/useActiveSection.js';
+import useActiveSection from '@/hooks/useActiveSection';
 
 const PhoneIcon = ({ size = 18 }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
