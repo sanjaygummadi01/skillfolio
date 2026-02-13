@@ -31,28 +31,7 @@ const HeroSection = () => {
               objectPosition: '50% 18%',
               transform: 'scale(1.5)',
               transformOrigin: '55% 28%',
-              filter: 'brightness(0.85) contrast(1.6) saturate(0.45)',
-            }}
-          />
-          {/* Split lighting - deep shadow cuts through center of face */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(95deg, rgba(5,11,14,1) 0%, rgba(5,11,14,1) 35%, rgba(5,11,14,0.85) 48%, rgba(5,11,14,0.35) 56%, rgba(5,11,14,0.05) 63%, transparent 70%)',
-            }}
-          />
-          {/* Right edge darkening */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(to left, rgba(5,11,14,0.85) 0%, rgba(5,11,14,0.4) 15%, transparent 40%)',
-            }}
-          />
-          {/* Bottom darkening for chin/neck */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(to top, rgba(5,11,14,0.7) 0%, rgba(5,11,14,0.2) 25%, transparent 45%)',
+              filter: 'brightness(0.55) contrast(1.2) saturate(0.5)',
             }}
           />
         </div>
