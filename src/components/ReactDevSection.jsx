@@ -1,15 +1,15 @@
 import ProjectCard from './ProjectCard';
-import reactProject1 from '@/assets/react-project-1.png';
+import reactProject1 from '@/assets/React-project1.png';
 import reactProject2 from '@/assets/react-project-2.png';
 import reactProject3 from '@/assets/react-project-3.png';
 
 const reactProjects = [
   {
     image: reactProject1,
-    title: 'Task Management Dashboard',
-    description: 'Real-time collaborative task board built with React, TypeScript, and Firebase.',
-    primaryBtn: { label: 'GitHub', href: '#' },
-    secondaryBtn: { label: 'Go Live', href: '#' },
+    title: 'Customizable Theme Portfolio',
+    description: 'Implemented a theme-adaptive UI allowing users to switch visual styles in real time, focusing on performance, accessibility, and component reusability.',
+    primaryBtn: { label: 'Live Demo', href: '#' },
+    secondaryBtn: { label: 'GitHub', href: '#' },
   },
   {
     image: reactProject2,

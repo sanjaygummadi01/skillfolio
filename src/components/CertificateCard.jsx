@@ -7,6 +7,7 @@ const CertificateCard = ({
   year,
   image,
   description,
+  verifyUrl, // <-- NEW PROP
   variant = 'design',
   delay = 0,
 }) => {
@@ -57,6 +58,7 @@ const CertificateCard = ({
             }}
             onClick={(e) => e.stopPropagation()}
           >
+            {/* CLOSE BUTTON */}
             <button
               onClick={() => setIsOpen(false)}
               className="absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center transition-colors hover:opacity-80"
@@ -68,15 +70,38 @@ const CertificateCard = ({
               </svg>
             </button>
 
-            <div className="mb-4">
-              <h3 className="font-heading text-2xl text-foreground">{name}</h3>
-              <p className="text-muted-foreground">Issued by {issuer} • {year}</p>
+            {/* HEADER WITH VERIFY */}
+            <div className="mb-4 flex items-start justify-between gap-4">
+              <div>
+                <div className="flex items-center gap-3">
+                  <h3 className="font-heading text-2xl text-foreground">{name}</h3>
+
+                  {verifyUrl && verifyUrl !== '#' && (
+                    <a
+                      href={verifyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs px-3 py-1 rounded-md border font-medium transition-all duration-300"
+                      style={{
+                        border: '1px solid hsl(180 100% 50% / 0.6)',
+                        color: 'hsl(180 100% 70%)',
+                        boxShadow: '0 0 8px hsl(180 100% 50% / 0.25)'
+                      }}
+                    >
+                      Verify
+                    </a>
+                  )}
+                </div>
+
+                <p className="text-muted-foreground">Issued by {issuer} • {year}</p>
+              </div>
             </div>
 
             <div className="space-y-4">
               <div className="rounded-lg overflow-hidden" style={{ border: '1px solid hsl(180 100% 50% / 0.3)', boxShadow: '0 0 15px hsl(180 100% 50% / 0.1)' }}>
                 <img src={image} alt={`${name} full certificate`} className="w-full h-auto object-contain" />
               </div>
+
               <div className="p-4 rounded-lg" style={{ background: 'hsl(180 100% 50% / 0.03)', border: '1px solid hsl(180 100% 50% / 0.15)' }}>
                 <h4 className="font-heading text-sm font-semibold text-primary mb-2">About this certification</h4>
                 <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
@@ -91,3 +116,7 @@ const CertificateCard = ({
 };
 
 export default CertificateCard;
+
+
+
+

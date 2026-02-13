@@ -1,29 +1,29 @@
 import ProjectCard from './ProjectCard';
-import project1 from '@/assets/uiux-project-1.png';
-import project2 from '@/assets/uiux-project-2.png';
-import project3 from '@/assets/uiux-project-3.png';
+import project1 from '@/assets/SkillBridge-uiux.png';
+import project2 from '@/assets/LocalMart-uiux.png';
+import project3 from '@/assets/Portfolio-uiux.png';
 
 const uiuxProjects = [
-  {
+ {
     image: project1,
-    title: 'FinTech Mobile App',
-    description: 'Complete UX redesign for a financial services app, improving user engagement by 45%.',
+    title: 'AI Career Roadmap Platform',
+    description: 'Guided learning experience helping users identify skill gaps and become job-ready through structured roadmaps.',
     primaryBtn: { label: 'Case Study', href: '#' },
-    secondaryBtn: { label: 'Demo', href: '#' },
+    secondaryBtn: { label: 'UI Flow', href: '#' },
   },
   {
     image: project2,
-    title: 'E-Commerce Platform',
-    description: 'End-to-end UX design for a modern shopping experience with seamless checkout flow.',
+    title: 'Local Grocery Marketplace',
+    description: 'Mobile-first commerce experience connecting buyers, sellers, and delivery partners with a frictionless ordering flow.',
     primaryBtn: { label: 'Case Study', href: '#' },
-    secondaryBtn: { label: 'Demo', href: '#' },
+    secondaryBtn: { label: 'UI Flow', href: '#' },
   },
   {
     image: project3,
-    title: 'Health & Wellness App',
-    description: 'Intuitive interface design for tracking fitness goals and mental wellness.',
+    title: 'Developer Portfolio Website',
+    description: 'Performance-focused personal website showcasing projects and technical skills with recruiter-friendly usability.',
     primaryBtn: { label: 'Case Study', href: '#' },
-    secondaryBtn: { label: 'Demo', href: '#' },
+    secondaryBtn: { label: 'UI Flow', href: '#' },
   },
 ];
 

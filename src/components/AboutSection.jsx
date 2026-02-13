@@ -1,4 +1,4 @@
-import aboutImage from '@/assets/about-portrait.png';
+import aboutImage from '@/assets/profile-image.jpeg';
 
 const AboutSection = () => {
   return (
@@ -30,15 +30,15 @@ const AboutSection = () => {
 
               <div className="flex flex-wrap gap-8 pt-4 scroll-reveal" style={{ transitionDelay: '0.6s' }}>
                 <div className="text-center">
-                  <div className="font-heading text-3xl font-bold text-primary neon-text">5+</div>
+                  <div className="font-heading text-3xl font-bold text-primary neon-text">-</div>
                   <div className="text-muted-foreground text-sm">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-heading text-3xl font-bold text-primary neon-text">50+</div>
+                  <div className="font-heading text-3xl font-bold text-primary neon-text">10+</div>
                   <div className="text-muted-foreground text-sm">Projects Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-heading text-3xl font-bold text-primary neon-text">30+</div>
+                  <div className="font-heading text-3xl font-bold text-primary neon-text">-</div>
                   <div className="text-muted-foreground text-sm">Happy Clients</div>
                 </div>
               </div>
