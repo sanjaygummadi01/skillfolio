@@ -23,15 +23,15 @@ const HeroSection = () => {
           {/* Portrait Image with neon ring matching uploaded image style */}
           <div className="mb-8 animate-float">
             <div className="relative">
-              {/* Outer neon glow ring - cyan to purple gradient */}
+              {/* Outer neon glow ring - matching page neon cyan */}
               <div className="absolute inset-[-16px] rounded-full" style={{
-                background: 'conic-gradient(from 180deg, hsl(180 100% 50%), hsl(280 100% 60%), hsl(320 100% 55%), hsl(280 100% 60%), hsl(180 100% 50%))',
-                filter: 'blur(12px)',
-                opacity: 0.6,
+                background: 'hsl(180 100% 50%)',
+                filter: 'blur(14px)',
+                opacity: 0.5,
               }} />
               <div className="absolute inset-[-8px] rounded-full" style={{
-                background: 'conic-gradient(from 180deg, hsl(180 100% 50%), hsl(280 100% 60%), hsl(320 100% 55%), hsl(280 100% 60%), hsl(180 100% 50%))',
-                opacity: 0.8,
+                background: 'hsl(180 100% 50%)',
+                opacity: 0.7,
               }} />
               <div className="absolute inset-[-4px] rounded-full bg-background" />
               <img
