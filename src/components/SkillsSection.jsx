@@ -1,5 +1,8 @@
 const designSkills = [
   { name: 'Figma', icon: '◈' },
+  { name: 'Adobe Photoshop', icon: '◈' },
+  { name: 'Adobe XD', icon: '◈' },
+  { name: 'Canva', icon: '◈' },
   { name: 'UX Research', icon: '◇' },
   { name: 'Wireframing', icon: '▢' },
   { name: 'Prototyping', icon: '◎' },
@@ -18,6 +21,7 @@ const devSkills = [
   { name: 'Tailwind CSS', icon: '◎' },
   { name: 'REST APIs', icon: '⟡' },
   { name: 'Git', icon: '◉' },
+  { name: 'Python', icon: '◉' },
 ];
 
 const SkillsSection = () => {

@@ -32,16 +32,42 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // ----------- ADDED SCROLL FUNCTION -----------
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (!element) return;
+
+    const navbarOffset = 90;
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - navbarOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+
+    setIsMobileMenuOpen(false);
+  };
+  // ---------------------------------------------
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass-card py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#home" className="font-heading text-xl font-bold tracking-wider text-primary neon-text">SANJAY</a>
+
+        {/* LOGO FIXED */}
+        <button onClick={() => scrollToSection('home')} className="font-heading text-xl font-bold tracking-wider text-primary neon-text">
+          SANJAY
+        </button>
 
         <div className="hidden lg:flex items-center gap-1">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className={`nav-link ${activeSection === item.id ? 'nav-link-active' : ''}`}>
+            <button
+              key={item.href}
+              onClick={() => scrollToSection(item.id)}
+              className={`nav-link ${activeSection === item.id ? 'nav-link-active' : ''}`}
+            >
               {item.label}
-            </a>
+            </button>
           ))}
           <a href="tel:7815895795" className="ml-2 p-2 rounded-full text-primary hover:bg-primary/10 transition-colors duration-200" aria-label="Call Sanjay" title="Call: 7815895795">
             <PhoneIcon size={18} />
@@ -60,11 +86,15 @@ const Navbar = () => {
       <div className={`lg:hidden absolute top-full left-0 right-0 glass-card transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
         <div className="container mx-auto px-6 py-4 flex flex-col gap-2">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className={`nav-link block py-2 ${activeSection === item.id ? 'nav-link-active' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              key={item.href}
+              onClick={() => scrollToSection(item.id)}
+              className={`nav-link block py-2 ${activeSection === item.id ? 'nav-link-active' : ''}`}
+            >
               {item.label}
-            </a>
+            </button>
           ))}
-          <a href="tel:7815895795" className="nav-link flex items-center gap-2 py-2" onClick={() => setIsMobileMenuOpen(false)}>
+          <a href="tel:7815895795" className="nav-link flex items-center gap-2 py-2">
             <PhoneIcon size={16} /> Call Me
           </a>
         </div>

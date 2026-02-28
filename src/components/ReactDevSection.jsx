@@ -1,29 +1,30 @@
 import ProjectCard from './ProjectCard';
-import reactProject1 from '@/assets/React-project1.png';
-import reactProject2 from '@/assets/react-project-2.png';
-import reactProject3 from '@/assets/react-project-3.png';
+import reactProject1 from '@/assets/SkillBridge-uiux.png';
+import reactProject2 from '@/assets/SmartAI.png';
+import reactProject3 from '@/assets/DataViz.png';
 
 const reactProjects = [
   {
     image: reactProject1,
-    title: 'Customizable Theme Portfolio',
-    description: 'Implemented a theme-adaptive UI allowing users to switch visual styles in real time, focusing on performance, accessibility, and component reusability.',
-    primaryBtn: { label: 'Live Demo', href: '#' },
-    secondaryBtn: { label: 'GitHub', href: '#' },
+    title: 'SkillBridge Learning Dashboard UI',
+    description: 'Designed and developed a responsive multi-panel learning dashboard interface featuring modular cards, data widgets, and clean visual hierarchy. Focused on scalable component architecture, consistent spacing system, and modern SaaS-style layout for improved usability and clarity.',
+    primaryBtn: { label: 'Go Live', href: 'https://sanjaygummadi01.github.io/skillbridgeai-project/' },
+    secondaryBtn: { label: 'GitHub', href: 'https://github.com/sanjaygummadi01/skillbridgeai-project.git' },
   },
+
   {
     image: reactProject2,
-    title: 'AI Chat Interface',
-    description: 'Modern chat application with AI integration, featuring real-time messaging and code highlighting.',
-    primaryBtn: { label: 'GitHub', href: '#' },
-    secondaryBtn: { label: 'Go Live', href: '#' },
+    title: 'SmartAI Chat Interface',
+    description: 'AI-powered chat application built as a responsive web app and packaged into a standalone Android APK. Features real-time conversational interface, optimized mobile navigation, and smooth performance for seamless standalone usage outside the browser.',
+    primaryBtn: { label: 'Download APP', href: 'https://github.com/sanjaygummadi01/skillfolio/releases/download/v1.0.0/SmartAI-Chat.apk' },
+    secondaryBtn: { label: 'GitHub', href: 'https://github.com/sanjaygummadi01/smartai-chat.git' },
   },
   {
     image: reactProject3,
-    title: 'Analytics Dashboard',
+    title: 'DataViz Dashboard',
     description: 'Interactive data visualization dashboard with charts, filters, and export functionality.',
-    primaryBtn: { label: 'GitHub', href: '#' },
-    secondaryBtn: { label: 'Go Live', href: '#' },
+    primaryBtn: { label: 'Go Live', href: 'https://sanjaygummadi01.github.io/analytics-dashboard/' },
+    secondaryBtn: { label: 'GitHub', href: 'https://github.com/sanjaygummadi01/analytics-dashboard.git' },
   },
 ];
 

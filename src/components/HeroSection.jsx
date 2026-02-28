@@ -1,6 +1,28 @@
 import heroPortrait from '@/assets/hero-portrait.png';
 
 const HeroSection = () => {
+
+  // ---------- added scroll handler ----------
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (!element) return;
+
+    const navbarOffset = 90;
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - navbarOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+
+    // prevents GitHub Pages mobile 404
+    setTimeout(() => {
+      window.history.replaceState(null, null, ' ');
+    }, 300);
+  };
+  // ------------------------------------------
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-glow-hero">
       <div className="text-fade-bg top-1/2 -translate-y-1/2">SANJAY</div>
@@ -15,14 +37,14 @@ const HeroSection = () => {
         <div className="flex flex-col items-center text-center">
           <div className="mb-8 animate-float">
             <div className="relative">
-              <div className="absolute inset-[-16px] rounded-full" style={{ background: 'hsl(180 100% 50%)', filter: 'blur(14px)', opacity: 0.5 }} />
-              <div className="absolute inset-[-8px] rounded-full" style={{ background: 'hsl(180 100% 50%)', opacity: 0.7 }} />
+              <div className="absolute inset-[-16px] rounded-full" style={{ background: 'hsl(180 100% 50%)', filter: 'blur(10px)', opacity: 0.25 }} />
+              <div className="absolute inset-[-8px] rounded-full" style={{ background: 'hsl(180 100% 50%)', opacity: 0.4  }} />
               <div className="absolute inset-[-4px] rounded-full bg-background" />
               <img
                 src={heroPortrait}
                 alt="Sanjay - UI/UX Designer & React Developer"
                 className="relative w-48 h-48 md:w-60 md:h-60 rounded-full object-cover"
-                style={{ objectPosition: '50% 30%', boxShadow: '0 0 40px hsl(180 100% 50% / 0.3), 0 0 80px hsl(280 100% 60% / 0.2)' }}
+                style={{ objectPosition: '50% 30%', boxShadow: '0 0 20px hsl(180 100% 50% / 0.2), 0 0 40px hsl(280 100% 60% / 0.15)' }}
               />
             </div>
           </div>
@@ -43,8 +65,12 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#uiux" className="neon-btn-primary">View My Work</a>
-            <a href="#contact" className="neon-btn-outline">Contact Me</a>
+            <button onClick={() => scrollToSection('uiux')} className="neon-btn-primary">
+              View My Work
+            </button>
+            <button onClick={() => scrollToSection('contact')} className="neon-btn-outline">
+              Contact Me
+            </button>
           </div>
         </div>
       </div>

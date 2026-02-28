@@ -8,22 +8,22 @@ const uiuxProjects = [
     image: project1,
     title: 'AI Career Roadmap Platform',
     description: 'Guided learning experience helping users identify skill gaps and become job-ready through structured roadmaps.',
-    primaryBtn: { label: 'Case Study', href: '#' },
-    secondaryBtn: { label: 'UI Flow', href: '#' },
+    primaryBtn: { label: 'Case Study'},
+    secondaryBtn: { label: 'UI Flow', href: 'https://www.behance.net/gallery/243741767/SkillBridge-AI-Powered-Career-Roadmap-Platform' },
   },
   {
     image: project2,
     title: 'Local Grocery Marketplace',
     description: 'Mobile-first commerce experience connecting buyers, sellers, and delivery partners with a frictionless ordering flow.',
-    primaryBtn: { label: 'Case Study', href: '#' },
-    secondaryBtn: { label: 'UI Flow', href: '#' },
+    primaryBtn: { label: 'Case Study'},
+    secondaryBtn: { label: 'UI Flow', href: 'https://www.behance.net/gallery/243742231/LocalMart-Local-Grocery-Marketplace-App' },
   },
   {
     image: project3,
     title: 'Developer Portfolio Website',
     description: 'Performance-focused personal website showcasing projects and technical skills with recruiter-friendly usability.',
-    primaryBtn: { label: 'Case Study', href: '#' },
-    secondaryBtn: { label: 'UI Flow', href: '#' },
+    primaryBtn: { label: 'Case Study'},
+    secondaryBtn: { label: 'UI Flow', href: 'https://www.behance.net/gallery/243742431/Software-Developer-Portfolio-Personal-Website' },
   },
 ];
 

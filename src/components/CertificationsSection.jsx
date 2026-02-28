@@ -1,70 +1,73 @@
 import CertificateCard from './CertificateCard';
-
-import certGoogleUx from '@/assets/UiuxCert-image.png';
-import certIxdf from '@/assets/cert-ixdf.png';
-import certFigma from '@/assets/cert-figma.png';
+import certMicrosoft from '@/assets/UiuxCert-image.png';
+import certIxdf from '@/assets/NotAvail-Messg.png';
+import figmaBootcamp from '@/assets/NotAvail-Messg.png';
 import certMeta from '@/assets/ReactCert-image.png';
-import certReact from '@/assets/cert-react.png';
-import certTypescript from '@/assets/cert-typescript.png';
+import certIBM from '@/assets/WebDevCert-image.png';
+import certBe10x from '@/assets/AIWShopCert-image.png';
 
 const designCertifications = [
-  {
-    name: 'Microsoft Ui/Ux Design',
+    {
+    name: 'Fundamentals of UI/UX Design',
     issuer: 'Microsoft',
-    year: '2024',
-    image: certGoogleUx,
-    verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/77HSVINROOOG', // <-- PUT REAL LINK
+    // year: 'Open',
+    image: certMicrosoft,
+    verifyUrl: 'https://coursera.org/verify/77HSVINR00OG',
     description:
-      'Professional certification in UX design covering the end-to-end design process including empathizing with users, defining pain points, ideating solutions, creating wireframes and prototypes, and conducting usability testing.',
+      'Certification from Microsoft covering UI/UX design principles, user-centered design methodology, wireframing, and usability best practices for digital product design.',
   },
+
   {
-    name: 'Interaction Design',
-    issuer: 'IxDF',
-    year: '2023',
+    name: 'Not Available',
+    issuer: 'Google',
+    // year: 'Open',
     image: certIxdf,
     verifyUrl: '#',
     description:
       'Comprehensive training in interaction design principles from the Interaction Design Foundation, covering user-centered design, usability, and creating engaging digital experiences that delight users.',
   },
-  {
-    name: 'Advanced Figma',
-    issuer: 'Figma Academy',
-    year: '2023',
-    image: certFigma,
-    verifyUrl: '#',
+    {
+    name: 'Not Available',
+    issuer: 'LetsUpgrade',
+    // year: 'Open',
+    image: figmaBootcamp,
+    verifyUrl: '#', 
     description:
-      'Advanced certification in Figma covering complex prototyping, design systems, component variants, auto-layout mastery, and collaborative design workflows for enterprise teams.',
+      '3-day intensive Figma bootcamp by LetsUpgrade focused on UI layout systems, auto-layout, components, prototyping, and real-world product design workflow. Certificate will be issued upon completion.',
   },
+
 ];
 
 const devCertifications = [
   {
-    name: 'Meta React Advanced',
+    name: 'React Advanced',
     issuer: 'Meta',
-    year: '2024',
+    // year: 'Open',
     image: certMeta,
     verifyUrl: 'https://coursera.org/verify/YFV38WP4NA', // <-- your real one
     description:
-      'Professional certification from Meta covering HTML, CSS, JavaScript, React, version control, and front-end development best practices for building modern web applications.',
+      'Professional certification from Meta covering Advanced React, and front-end development best practices for building modern web applications.',
   },
-  {
-    name: 'React Advanced',
-    issuer: 'Udemy',
-    year: '2023',
-    image: certReact,
-    verifyUrl: '#',
+    {
+    name: 'Web Development with HTML, CSS, JavaScript',
+    issuer: 'IBM',
+    // year: 'Open',
+    image: certIBM,
+    verifyUrl: 'https://coursera.org/verify/WPEKINVJ4PF',
     description:
-      'Advanced React certification covering hooks, context API, Redux, performance optimization, testing, and building scalable React applications with modern patterns.',
+      'Certification from IBM covering fundamentals of web development including HTML structure, CSS styling, and JavaScript programming for building responsive web applications.',
   },
-  {
-    name: 'TypeScript Mastery',
-    issuer: 'Frontend Masters',
-    year: '2023',
-    image: certTypescript,
-    verifyUrl: '#',
+
+    {
+    name: 'AI Tools & ChatGPT Workshop',
+    issuer: 'be10x',
+    // year: 'Open',
+    image: certBe10x,
+    verifyUrl: 'https://certx.in/certificate/9318e7f9-0234-4ea4-9390-efad88624b8b262270', 
     description:
-      'Comprehensive TypeScript certification covering advanced types, generics, decorators, type guards, and integrating TypeScript with React for type-safe front-end development.',
+      'Hands-on workshop focused on practical AI productivity skills including ChatGPT usage, AI-assisted coding, data analysis, and presentation automation.',
   },
+
 ];
 
 const CertificationsSection = () => {
