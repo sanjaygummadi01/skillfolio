@@ -1,73 +1,49 @@
-# Welcome to your Lovable project
+# Skillfolio – Developer Portfolio
 
-## Project info
+A modern personal developer portfolio built to showcase my projects, technical skills, and UI/UX work. The portfolio highlights my work as a React Frontend Developer and provides access to my live applications, GitHub repositories, and design projects.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Live Portfolio
+https://sanjaygummadi01.github.io/skillfolio/
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
+Frontend
+- ReactJS
+- JavaScript (ES6+)
 - TypeScript
-- React
-- shadcn-ui
+- HTML5
+- CSS3
 - Tailwind CSS
 
-## How can I deploy this project?
+UI / UX
+- Figma
+- Wireframing
+- Prototyping
+- Design Systems
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Tools
+- Vite
+- Git
+- GitHub
 
-## Can I connect a custom domain to my Lovable project?
+## Features
 
-Yes, you can!
+- Clean and responsive UI design
+- Modern component-based architecture using React
+- Project showcase section with detailed descriptions
+- UI/UX design project presentations
+- Quick access to GitHub repositories and live demos
+- Optimized performance and responsive layout
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Featured Projects
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### SmartAI Chat
+AI-powered chat application built using React and TypeScript with responsive UI and dynamic state management.
+
+### DataViz Dashboard
+Interactive analytics dashboard for visualizing structured data using React components and modern UI practices.
+
+### SkillBridge UI/UX
+Complete UI/UX design system including wireframes, high-fidelity prototypes, and interaction flows designed in Figma.
+
+## Project Structure
