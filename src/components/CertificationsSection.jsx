@@ -1,40 +1,41 @@
 import CertificateCard from './CertificateCard';
-import certMicrosoft from '@/assets/UiuxCert-image.png';
-import certIxdf from '@/assets/NotAvail-Messg.png';
-import figmaBootcamp from '@/assets/NotAvail-Messg.png';
+import certmicrosoft from '@/assets/UiuxCert-image.png';
+import GenAiCert from '@/assets/AipromptCert.png';
+import ClaudeCert from '@/assets/Claude_Cert.png';
 import certMeta from '@/assets/ReactCert-image.png';
 import certIBM from '@/assets/WebDevCert-image.png';
 import certBe10x from '@/assets/AIWShopCert-image.png';
+
 
 const designCertifications = [
     {
     name: 'Fundamentals of UI/UX Design',
     issuer: 'Microsoft',
     // year: 'Open',
-    image: certMicrosoft,
+    image: certmicrosoft,
     verifyUrl: 'https://coursera.org/verify/77HSVINROOOG',
     description:
       'Certification from Microsoft covering UI/UX design principles, user-centered design methodology, wireframing, and usability best practices for digital product design.',
   },
 
   {
-    name: 'Not Available',
-    issuer: 'Google',
-    // year: 'Open',
-    image: certIxdf,
-    verifyUrl: '#',
-    description:
-      'Comprehensive training in interaction design principles from the Interaction Design Foundation, covering user-centered design, usability, and creating engaging digital experiences that delight users.',
-  },
-    {
-    name: 'Not Available',
-    issuer: 'LetsUpgrade',
-    // year: 'Open',
-    image: figmaBootcamp,
-    verifyUrl: '#', 
-    description:
-      '3-day intensive Figma bootcamp by LetsUpgrade focused on UI layout systems, auto-layout, components, prototyping, and real-world product design workflow. Certificate will be issued upon completion.',
-  },
+  name: 'Generative AI: Prompt Engineering Basics',
+  issuer: 'IBM',
+  // year: '2026',
+  image: GenAiCert,
+  verifyUrl: 'https://coursera.org/verify/3FLRCDTRNMHH',
+  description:
+    'IBM-certified course covering prompt engineering fundamentals, effective prompt design techniques, AI interaction strategies, and practical methods for generating accurate and high-quality outputs from generative AI models.',
+},
+   {
+  name: 'Claude 101',
+  issuer: 'Anthropic',
+  // year: '2026',
+  image: ClaudeCert,
+  verifyUrl: '#',
+  description:
+    'Successfully completed Claude 101 by Anthropic, gaining foundational knowledge of Claude AI, conversational prompting, AI-assisted task execution, and best practices for using generative AI tools effectively in real-world scenarios.',
+},
 
 ];
 
