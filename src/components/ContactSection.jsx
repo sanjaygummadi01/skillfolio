@@ -23,7 +23,7 @@ const ContactSection = () => {
 
     try {
       await emailjs.send(
-        "service_s52wj1f",   // service id
+        "service_rtadf15",   // service id
         "template_2mfvrvm",  // template id
         {
           name: formData.name,
