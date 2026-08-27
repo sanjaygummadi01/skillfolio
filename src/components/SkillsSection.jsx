@@ -20,8 +20,9 @@ const devSkills = [
   { name: 'CSS3', icon: '▣' },
   { name: 'Tailwind CSS', icon: '◎' },
   { name: 'REST APIs', icon: '⟡' },
-  { name: 'Git', icon: '◉' },
+  { name: 'Git,GitHub', icon: '◉' },
   { name: 'Python', icon: '◉' },
+   { name: 'SQL', icon: '◉' },
 ];
 
 const SkillsSection = () => {
