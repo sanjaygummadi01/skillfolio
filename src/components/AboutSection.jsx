@@ -63,8 +63,8 @@ const AboutSection = () => {
 
           <div className="mt-12 flex justify-center scroll-reveal" style={{ transitionDelay: '0.7s' }}>
             <a
-              href={`${import.meta.env.BASE_URL}Sanjay_Gummadi_Frontend_Developer_Resume.pdf`}
-              download="Sanjay_Gummadi_Frontend_Developer_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Sanjay Gummadi_se_Resume.pdf`}
+              download="Sanjay Gummadi_se_Resume.pdf"
               className="group relative inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105"
               style={{
                 background: 'linear-gradient(135deg, hsl(180 100% 50% / 0.2), hsl(280 100% 60% / 0.2))',
